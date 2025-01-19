@@ -1,0 +1,154 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.12.jar)
+  IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  MicdoodlePlugin (MicdoodleCore-1.12.2-4.0.2.280.jar)
+  TransformerLoader (OpenComputers-MC1.12.2-1.8.7+2502094.jar)
+Contact their authors BEFORE contacting forge
+
+// On the bright side, I bought you a teddy bear!
+
+Time: 1/19/25 9:04 PM
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from ExLibrary (exlibrary)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft
+	at com.example.examplemod.ExampleMod.preInit(ExampleMod.java:18619)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:637)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:629)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:99)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.Minecraft
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 36 more
+Caused by: net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerException: Exception in class transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer@3d7fa3ae from coremod FMLCorePlugin
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:260)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 38 more
+Caused by: java.lang.RuntimeException: Attempted to load class bib for invalid side SERVER
+	at net.minecraftforge.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:62)
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:256)
+	... 40 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 6.12.9-arch1-1
+	Java Version: 1.8.0_432, Arch Linux
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Arch Linux
+	Memory: 3203162400 bytes (3054 MB) / 4770496512 bytes (4549 MB) up to 5726797824 bytes (5461 MB)
+	JVM Flags: 2 total; -Xmx6144M -Xms4096M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 53 mods loaded, 53 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                             | Version           | Source                                                | Signature                                |
+	|:----- |:------------------------------ |:----------------- |:----------------------------------------------------- |:---------------------------------------- |
+	| LCH   | minecraft                      | 1.12.2            | minecraft.jar                                         | None                                     |
+	| LCH   | mcp                            | 9.42              | minecraft.jar                                         | None                                     |
+	| LCH   | FML                            | 8.0.99.99         | forge-1.12.2-14.23.5.2860.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCH   | forge                          | 14.23.5.2860      | forge-1.12.2-14.23.5.2860.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCH   | micdoodlecore                  |                   | minecraft.jar                                         | None                                     |
+	| LCH   | foamfixcore                    | 7.7.4             | minecraft.jar                                         | None                                     |
+	| LCH   | opencomputers|core             | 1.8.7             | minecraft.jar                                         | None                                     |
+	| LCH   | securitycraft                  | v1.9.12           | [1.12.2] SecurityCraft v1.9.12.jar                    | None                                     |
+	| LCH   | biomesoplenty                  | 7.0.1.2444        | BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar         | None                                     |
+	| LCH   | bookshelf                      | 2.3.590           | Bookshelf-1.12.2-2.3.590.jar                          | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCH   | collective                     | 3.0               | collective-1.12.2-3.0.jar                             | None                                     |
+	| LCH   | cyclopscore                    | 1.6.7             | CyclopsCore-1.12.2-1.6.7.jar                          | bd0353b3e8a2810d60dd584e256e364bc3bedd44 |
+	| LCH   | evilcraft                      | 0.10.78           | EvilCraft-1.12.2-0.10.78.jar                          | bd0353b3e8a2810d60dd584e256e364bc3bedd44 |
+	| LCH   | evilcraftcompat                | 1.0.0             | EvilCraft-1.12.2-0.10.78.jar                          | None                                     |
+	| LCH   | mts                            | 22.17.0           | Immersive Vehicles-1.12.2-22.17.0.jar                 | None                                     |
+	| LCH   | unuparts                       | 6.7.0             | UNU Parts Pack [MTS] 1.12.2-22.17.0-6.7.0.jar         | None                                     |
+	| LCH   | unucivil                       | 6.5.2             | UNU Civilian Pack [MTS] 1.12.2-22.17.0-6.5.2.jar      | None                                     |
+	| LCH   | unuverse                       | 2.1.1             | Expanded UNUverse Pack [MTS] 1.12.2-22.17.0-2.1.1.jar | None                                     |
+	| LCE   | exlibrary                      | 1.0               | FapCraft.1.12.2.v1.1.jar                              | None                                     |
+	| LC    | fluxnetworks                   | 4.1.0             | FluxNetworks-1.12.2-4.1.1.34.jar                      | None                                     |
+	| LC    | foamfix                        | @VERSION@         | foamfix-0.10.15-1.12.2.jar                            | None                                     |
+	| LC    | ic2                            | 2.8.222-ex112     | industrialcraft-2-2.8.222-ex112.jar                   | de041f9f6187debbc77034a344134053277aa3b0 |
+	| LC    | galacticraftcore               | 4.0.2.280         | GalacticraftCore-1.12.2-4.0.2.280.jar                 | None                                     |
+	| LC    | galacticraftplanets            | 4.0.2.280         | Galacticraft-Planets-1.12.2-4.0.2.280.jar             | None                                     |
+	| LC    | waila                          | 1.8.26            | Hwyla-1.8.26-B41_1.12.2.jar                           | None                                     |
+	| LC    | icbmclassic                    | 6.4.1             | ICBM-classic-1.12.2-6.4.1.jar                         | None                                     |
+	| LC    | ichunutil                      | 7.2.2             | iChunUtil-1.12.2-7.2.2.jar                            | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+	| LC    | ironchest                      | 1.12.2-7.0.67.844 | ironchest-1.12.2-7.0.72.847.jar                       | None                                     |
+	| LC    | ironfurnaces                   | 1.3.5             | ironfurnaces-1.3.5.jar                                | None                                     |
+	| LC    | jei                            | 4.16.1.1013       | jei_1.12.2-4.16.1.1013.jar                            | None                                     |
+	| LC    | journeymap                     | 1.12.2-5.7.1p3    | journeymap-1.12.2-5.7.1p3.jar                         | None                                     |
+	| LC    | mahoutsukai                    | 1.12.2-v1.19.55   | mahoutsukai-1.12.2-v1.19.56.jar                       | None                                     |
+	| LC    | mcwbridges                     | 1.0.6             | mcw-bridges-1.0.6b-mc1.12.2.jar                       | None                                     |
+	| LC    | mcwdoors                       | 1.3               | mcw-doors-1.0.3-mc1.12.2.jar                          | None                                     |
+	| LC    | mcwfences                      | 1.0.0             | mcw-fences-1.0.0-mc1.12.2.jar                         | None                                     |
+	| LC    | mcwfurnitures                  | 1.0.1             | mcw-furniture-1.0.1-mc1.12.2beta.jar                  | None                                     |
+	| LC    | mcwlights                      | 1.0.6             | mcw-lights-1.0.6-mc1.12.2forge.jar                    | None                                     |
+	| LC    | mcwroofs                       | 1.0.2             | mcw-roofs-1.0.2-mc1.12.2.jar                          | None                                     |
+	| LC    | mcwtrpdoors                    | 1.0.2             | mcw-trapdoors-1.0.3-mc1.12.2.jar                      | None                                     |
+	| LC    | mcwwindows                     | 1.0               | mcw-windows-1.0.0-mc1.12.2.jar                        | None                                     |
+	| LC    | morph                          | 7.2.0             | Morph-1.12.2-7.2.1.jar                                | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+	| LC    | mtsofficialpack                | 1.2               | MTS Official Pack-1.12.2-V27.jar                      | None                                     |
+	| LC    | narcocraft                     | 1.0.0             | NarcoCraftV3.0.jar                                    | None                                     |
+	| LC    | nuclearcraft                   | @VERSION@         | nuclearcraft-1.12.2-2.19.jar                          | None                                     |
+	| LC    | opencomputers                  | 1.8.7             | OpenComputers-MC1.12.2-1.8.7+2502094.jar              | None                                     |
+	| LC    | eternalsoap.icbm.opencomputers | 1.0               | OpenComputersICBMAddon-1.3.jar                        | None                                     |
+	| LC    | railcraft                      | 12.1.0-beta-8     | railcraft-12.1.0-beta-8.jar                           | a0c255ac501b2749537d5824bb0f0588bf0320fa |
+	| LC    | storagenetwork                 | 2.0.0             | SimpleStorageNetwork-1.12.2-2.0.0.jar                 | 0e5cb559be7d03f3fc18b8cba547d663e25f28af |
+	| LC    | uteamcore                      | 2.2.5.339         | u_team_core-forge-1.12.2-2.2.5.339.jar                | None                                     |
+	| LC    | unumilitary                    | 6.0.1             | UNU Military Pack [MTS] 1.12.2-22.17.0-6.0.1.jar      | None                                     |
+	| LC    | usefulbackpacks                | 1.5.4.85          | useful_backpacks-1.12.2-1.5.4.85.jar                  | None                                     |
+	| LC    | wonderful_enchantments         | 0.6.0             | wonderful-enchantments-1.12.2-0.6.0.jar               | None                                     |
+	| LC    | immersiveengineering           | 0.12-98           | ImmersiveEngineering-0.12-98.jar                      | None                                     |
+
+	Loaded coremods (and transformers): 
+SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.12.jar)
+  
+IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+MicdoodlePlugin (MicdoodleCore-1.12.2-4.0.2.280.jar)
+  micdoodle8.mods.miccore.MicdoodleTransformer
+TransformerLoader (OpenComputers-MC1.12.2-1.8.7+2502094.jar)
+  li.cil.oc.common.asm.ClassTransformer
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

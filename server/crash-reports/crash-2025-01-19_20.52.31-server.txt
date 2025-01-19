@@ -1,0 +1,117 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.12.jar)
+  IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  MicdoodlePlugin (MicdoodleCore-1.12.2-4.0.2.280.jar)
+  TransformerLoader (OpenComputers-MC1.12.2-1.8.7+2502094.jar)
+Contact their authors BEFORE contacting forge
+
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 1/19/25 8:52 PM
+Description: Exception in server tick loop
+
+Duplicate Mods:
+	galacticraftplanets : /home/lyrix/GitHub/magicmc/server/./mods/Galacticraft-Planets-1.12.2-4.0.2.280.jar
+	galacticraftplanets : /home/lyrix/GitHub/magicmc/server/./mods/Galacticraft-Planets-1.12.2-4.0.2.280(1).jar
+
+net.minecraftforge.fml.common.DuplicateModsFoundException
+	at net.minecraftforge.fml.common.Loader.identifyDuplicates(Loader.java:466)
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:428)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 6.12.9-arch1-1
+	Java Version: 1.8.0_432, Arch Linux
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Arch Linux
+	Memory: 3374566928 bytes (3218 MB) / 4738514944 bytes (4519 MB) up to 5726797824 bytes (5461 MB)
+	JVM Flags: 2 total; -Xmx6144M -Xms4096M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 55 mods loaded, 0 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                             | Version           | Source                                                | Signature                                |
+	|:----- |:------------------------------ |:----------------- |:----------------------------------------------------- |:---------------------------------------- |
+	|       | minecraft                      | 1.12.2            | minecraft.jar                                         | None                                     |
+	|       | mcp                            | 9.42              | minecraft.jar                                         | None                                     |
+	|       | FML                            | 8.0.99.99         | forge-1.12.2-14.23.5.2860.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	|       | forge                          | 14.23.5.2860      | forge-1.12.2-14.23.5.2860.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	|       | micdoodlecore                  |                   | minecraft.jar                                         | None                                     |
+	|       | foamfixcore                    | 7.7.4             | minecraft.jar                                         | None                                     |
+	|       | opencomputers|core             | 1.8.7             | minecraft.jar                                         | None                                     |
+	|       | securitycraft                  | v1.9.12           | [1.12.2] SecurityCraft v1.9.12.jar                    | None                                     |
+	|       | biomesoplenty                  | 7.0.1.2444        | BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar         | None                                     |
+	|       | bookshelf                      | 2.3.590           | Bookshelf-1.12.2-2.3.590.jar                          | None                                     |
+	|       | collective                     | 3.0               | collective-1.12.2-3.0.jar                             | None                                     |
+	|       | cyclopscore                    | 1.6.7             | CyclopsCore-1.12.2-1.6.7.jar                          | None                                     |
+	|       | evilcraft                      | 0.10.78           | EvilCraft-1.12.2-0.10.78.jar                          | None                                     |
+	|       | evilcraftcompat                | 1.0.0             | EvilCraft-1.12.2-0.10.78.jar                          | None                                     |
+	|       | unuverse                       | 2.1.1             | Expanded UNUverse Pack [MTS] 1.12.2-22.17.0-2.1.1.jar | None                                     |
+	|       | exlibrary                      | 1.0               | FapCraft.1.12.2.v1.1.jar                              | None                                     |
+	|       | fluxnetworks                   | 4.1.0             | FluxNetworks-1.12.2-4.1.1.34.jar                      | None                                     |
+	|       | foamfix                        | @VERSION@         | foamfix-0.10.15-1.12.2.jar                            | None                                     |
+	|       | galacticraftplanets            | 4.0.2.280         | Galacticraft-Planets-1.12.2-4.0.2.280(1).jar          | None                                     |
+	|       | galacticraftplanets            | 4.0.2.280         | Galacticraft-Planets-1.12.2-4.0.2.280.jar             | None                                     |
+	|       | galacticraftcore               | 4.0.2.280         | GalacticraftCore-1.12.2-4.0.2.280.jar                 | None                                     |
+	|       | waila                          | 1.8.26            | Hwyla-1.8.26-B41_1.12.2.jar                           | None                                     |
+	|       | icbmclassic                    | 6.4.1             | ICBM-classic-1.12.2-6.4.1.jar                         | None                                     |
+	|       | ichunutil                      | 7.2.2             | iChunUtil-1.12.2-7.2.2.jar                            | None                                     |
+	|       | mts                            | 22.17.0           | Immersive Vehicles-1.12.2-22.17.0.jar                 | None                                     |
+	|       | ic2                            | 2.8.222-ex112     | industrialcraft-2-2.8.222-ex112.jar                   | None                                     |
+	|       | ironchest                      | 1.12.2-7.0.67.844 | ironchest-1.12.2-7.0.72.847.jar                       | None                                     |
+	|       | ironfurnaces                   | 1.3.5             | ironfurnaces-1.3.5.jar                                | None                                     |
+	|       | jei                            | 4.16.1.1013       | jei_1.12.2-4.16.1.1013.jar                            | None                                     |
+	|       | journeymap                     | 1.12.2-5.7.1p3    | journeymap-1.12.2-5.7.1p3.jar                         | None                                     |
+	|       | mahoutsukai                    | 1.12.2-v1.19.55   | mahoutsukai-1.12.2-v1.19.56.jar                       | None                                     |
+	|       | mcwbridges                     | 1.0.6             | mcw-bridges-1.0.6b-mc1.12.2.jar                       | None                                     |
+	|       | mcwdoors                       | 1.3               | mcw-doors-1.0.3-mc1.12.2.jar                          | None                                     |
+	|       | mcwfences                      | 1.0.0             | mcw-fences-1.0.0-mc1.12.2.jar                         | None                                     |
+	|       | mcwfurnitures                  | 1.0.1             | mcw-furniture-1.0.1-mc1.12.2beta.jar                  | None                                     |
+	|       | mcwlights                      | 1.0.6             | mcw-lights-1.0.6-mc1.12.2forge.jar                    | None                                     |
+	|       | mcwroofs                       | 1.0.2             | mcw-roofs-1.0.2-mc1.12.2.jar                          | None                                     |
+	|       | mcwtrpdoors                    | 1.0.2             | mcw-trapdoors-1.0.3-mc1.12.2.jar                      | None                                     |
+	|       | mcwwindows                     | 1.0               | mcw-windows-1.0.0-mc1.12.2.jar                        | None                                     |
+	|       | morph                          | 7.2.0             | Morph-1.12.2-7.2.1.jar                                | None                                     |
+	|       | mtsofficialpack                | 1.2               | MTS Official Pack-1.12.2-V27.jar                      | None                                     |
+	|       | narcocraft                     | 1.0.0             | NarcoCraftV3.0.jar                                    | None                                     |
+	|       | nuclearcraft                   | @VERSION@         | nuclearcraft-1.12.2-2.19.jar                          | None                                     |
+	|       | opencomputers                  | 1.8.7             | OpenComputers-MC1.12.2-1.8.7+2502094.jar              | None                                     |
+	|       | eternalsoap.icbm.opencomputers | 1.0               | OpenComputersICBMAddon-1.3.jar                        | None                                     |
+	|       | railcraft                      | 12.1.0-beta-8     | railcraft-12.1.0-beta-8.jar                           | None                                     |
+	|       | storagenetwork                 | 2.0.0             | SimpleStorageNetwork-1.12.2-2.0.0.jar                 | None                                     |
+	|       | uteamcore                      | 2.2.5.339         | u_team_core-forge-1.12.2-2.2.5.339.jar                | None                                     |
+	|       | unucivil                       | 6.5.2             | UNU Civilian Pack [MTS] 1.12.2-22.17.0-6.5.2.jar      | None                                     |
+	|       | unumilitary                    | 6.0.1             | UNU Military Pack [MTS] 1.12.2-22.17.0-6.0.1.jar      | None                                     |
+	|       | unuparts                       | 6.7.0             | UNU Parts Pack [MTS] 1.12.2-22.17.0-6.7.0.jar         | None                                     |
+	|       | usefulbackpacks                | 1.5.4.85          | useful_backpacks-1.12.2-1.5.4.85.jar                  | None                                     |
+	|       | wonderful_enchantments         | 0.6.0             | wonderful-enchantments-1.12.2-0.6.0.jar               | None                                     |
+	|       | leatherfromrottenflesh         | 1.0.0             | zaynens_leather_from_rotten_flesh_mod_1.12.2.jar      | None                                     |
+	|       | immersiveengineering           | 0.12-98           | ImmersiveEngineering-0.12-98.jar                      | None                                     |
+
+	Loaded coremods (and transformers): 
+SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.12.jar)
+  
+IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+MicdoodlePlugin (MicdoodleCore-1.12.2-4.0.2.280.jar)
+  micdoodle8.mods.miccore.MicdoodleTransformer
+TransformerLoader (OpenComputers-MC1.12.2-1.8.7+2502094.jar)
+  li.cil.oc.common.asm.ClassTransformer
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
