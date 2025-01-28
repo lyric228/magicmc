@@ -1,18 +1,531 @@
-[09:08:18] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Server] sperma dens
-[09:08:22] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Stopping the server
-[09:08:22] [Server thread/INFO] [icbmclassic]: Stopping threads
-[09:08:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
-[09:08:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
-[09:08:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
-[09:08:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'world'/overworld
-[09:08:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'world'/the_nether
-[09:08:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'world'/the_end
-[09:08:22] [Server thread/INFO] [FML]: Unloading dimension 0
-[09:08:22] [Server thread/INFO] [FML]: Unloading dimension -1
-[09:08:22] [Server thread/INFO] [FML]: Unloading dimension 1
-[09:08:22] [Server thread/INFO] [FluxNetworks]: FluxNetworkData has been unloaded
-[09:08:22] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -30
-[09:08:22] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -29
-[09:08:22] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -31
-[09:08:22] [Server thread/INFO] [Galacticraft]: Unregistered Dimension: -28
-[09:08:22] [Server thread/INFO] [nuclearcraft]: Server Closing...
+[15:23:45] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[15:23:45] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[15:23:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[15:23:45] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
+[15:23:45] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_442, running on Linux:amd64:6.12.10-arch1-1, installed at /usr/lib/jvm/java-8-openjdk/jre
+[15:23:45] [main/INFO] [FML]: Searching /home/lyrix/GitHub/magicmc/server/./mods for mods
+[15:23:45] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from [1.12.2] SecurityCraft v1.9.12.jar
+[15:23:45] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in foamfix-0.10.15-1.12.2.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:23:45] [main/WARN] [FML]: The coremod pl.asie.foamfix.coremod.FoamFixCore does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:23:45] [main/WARN] [FML]: The coremod Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (pl.asie.foamfix.coremod.FoamFixCore) is not signed!
+[15:23:45] [main/WARN] [FML]: The coremod micdoodle8.mods.miccore.MicdoodlePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:23:45] [main/WARN] [FML]: The coremod MicdoodlePlugin (micdoodle8.mods.miccore.MicdoodlePlugin) is not signed!
+[15:23:45] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in OpenComputers-MC1.12.2-1.8.7+2502094.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:23:45] [main/WARN] [FML]: The coremod li.cil.oc.common.launch.TransformerLoader does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:23:45] [main/WARN] [FML]: The coremod TransformerLoader (li.cil.oc.common.launch.TransformerLoader) is not signed!
+[15:23:45] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in techguns-1.12.2-2.0.2.0_pre3.2.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:23:45] [main/WARN] [FML]: The coremod Techguns Core (techguns.core.TechgunsFMLPlugin) is not signed!
+[15:23:45] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in wings-1.1.6-1.12.2.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:23:45] [main/WARN] [FML]: The coremod wings (me.paulf.wings.server.asm.plugin.WingsLoadingPlugin) is not signed!
+[15:23:45] [main/WARN] [FML]: The coremod blusunrize.immersiveengineering.common.asm.IELoadingPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:23:45] [main/WARN] [FML]: The coremod IELoadingPlugin (blusunrize.immersiveengineering.common.asm.IELoadingPlugin) is not signed!
+[15:23:45] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:23:45] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.launch.MixinTweaker
+[15:23:45] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8.3 Source=file:/home/lyrix/GitHub/magicmc/server/./mods/%5B1.12.2%5D%20SecurityCraft%20v1.9.12.jar Service=LaunchWrapper Env=SERVER
+[15:23:45] [main/WARN] [FML]: The coremod SecurityCraftLoadingPlugin (net.geforcemods.securitycraft.SecurityCraftLoadingPlugin) is not signed!
+[15:23:45] [main/INFO] [mixin]: Compatibility level set to JAVA_8
+[15:23:45] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:23:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:23:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:23:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [STDOUT]: [micdoodle8.mods.miccore.MicdoodlePlugin:getASMTransformerClass:99]: Successfully Registered Transformer
+[15:23:46] [main/INFO] [STDOUT]: [micdoodle8.mods.miccore.MicdoodlePlugin:injectData:292]: [Micdoodle8Core]: Patching game...
+[15:23:46] [main/INFO] [STDOUT]: [micdoodle8.mods.miccore.MicdoodlePlugin:injectData:292]: [Micdoodle8Core]: Patching game...
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.launch.MixinTweaker
+[15:23:46] [main/INFO] [mixin]: Initialised Mixin FML Remapper Adapter with net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper@17c0274c
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:23:46] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:23:46] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:23:46] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:101]: Added INTERFACE: pl/asie/foamfix/coremod/patches/IFoamFixWorldRemovable
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:141]: Added METHOD: net.minecraft.world.World.foamfix_removeUnloadedEntities
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.patches.WorldServerRemovalPatch:apply:57]: Patched updateEntities in net/minecraft/world/WorldServer func_72939_s
+[15:23:47] [main/WARN] [LLibrary Core]: Failed to fetch hierarchy node for net.minecraft.util.text.TextComponentTranslation. This may cause patch issues
+[15:23:47] [main/WARN] [LLibrary Core]: Failed to fetch hierarchy node for net.minecraft.tileentity.CommandBlockBaseLogic. This may cause patch issues
+[15:23:47] [main/WARN] [LLibrary Core]: Failed to fetch hierarchy node for net.minecraft.item.ItemStack. This may cause patch issues
+[15:23:47] [main/WARN] [LLibrary Core]: Failed to fetch hierarchy node for net.minecraft.entity.EntityLivingBase. This may cause patch issues
+[15:23:47] [main/WARN] [LLibrary Core]: Failed to fetch hierarchy node for net.minecraft.entity.Entity. This may cause patch issues
+[15:23:47] [main/WARN] [LLibrary Core]: Failed to fetch hierarchy node for net.minecraft.nbt.NBTTagList. This may cause patch issues
+[15:23:47] [main/WARN] [LLibrary Core]: Failed to fetch hierarchy node for net.minecraft.entity.player.EntityPlayerMP. This may cause patch issues
+[15:23:47] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.block.state.BlockStateContainer.createState
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.block.state.BlockStateContainer.foamfix_mapper
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.block.properties.PropertyEnum.equals
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.block.properties.PropertyEnum.hashCode
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.block.properties.PropertyEnum.foamfix_hashCode
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.block.properties.PropertyEnum.foamfix_hashCode_calced
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.block.properties.PropertyInteger.hashCode
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.block.properties.PropertyInteger.foamfix_hashCode
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.block.properties.PropertyInteger.foamfix_hashCode_calced
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.block.properties.PropertyBool.equals
+[15:23:47] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.block.properties.PropertyBool.hashCode
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.tileentity.TileEntity.func_190559_a
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.block.BlockBed.func_189540_a
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.patches.GhostBusterBlockStateAccessPatch$FFMethodVisitor:visitMethodInsn:93]: Added ghost buster patch (getBlockState call wrapped) in net/minecraft/block/BlockFarmland func_176530_e (net/minecraft/world/World func_180495_p (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;)
+[15:23:48] [main/INFO] [OpenComputers]: Successfully patched net/minecraft/entity/EntityLiving.recreateLeash.
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.patchy.helpers.ConstructorReplacingTransformer$FFMethodVisitor:visitTypeInsn:73]: Replaced NEW for net/minecraft/tileentity/TileEntityHopper to pl/asie/foamfix/common/TileEntityFasterHopper
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.patchy.helpers.ConstructorReplacingTransformer$FFMethodVisitor:visitMethodInsn:85]: Replaced INVOKESPECIAL for net/minecraft/tileentity/TileEntityHopper to pl/asie/foamfix/common/TileEntityFasterHopper
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:101]: Added INTERFACE: pl/asie/foamfix/coremod/patches/IFoamFixWorldRemovable
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:141]: Added METHOD: net.minecraft.world.World.foamfix_removeUnloadedEntities
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:101]: Added INTERFACE: pl/asie/foamfix/api/IFoamFixMobSpawnerLogic
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.tileentity.MobSpawnerBaseLogic.func_98279_f
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.tileentity.MobSpawnerBaseLogic.foamfix_activatedCache
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.tileentity.MobSpawnerBaseLogic.foamfix_activatedCachePESize
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.tileentity.MobSpawnerBaseLogic.foamfix_activatedCacheTime
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.tileentity.MobSpawnerBaseLogic.foamfix_forcedCache
+[15:23:48] [main/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraft.tileentity.MobSpawnerBaseLogic.foamfix_forcedCacheTime
+[15:23:49] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting minecraft server version 1.12.2
+[15:23:49] [Server thread/INFO] [FML]: MinecraftForge v14.23.5.2860 Initialized
+[15:23:49] [Server thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[15:23:49] [Server thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[15:23:49] [Server thread/INFO] [FML]: Replaced 1227 ore ingredients
+[15:23:49] [Server thread/INFO] [FML]: Searching /home/lyrix/GitHub/magicmc/server/./mods for mods
+[15:23:50] [Server thread/WARN] [FML]: Mod securitycraft is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version v1.9.12
+[15:23:50] [Server thread/INFO] [FML]: Disabling mod enchdesc it is client side only.
+[15:23:50] [Server thread/WARN] [FML]: Mod icbmclassic is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 6.4.1
+[15:23:50] [Server thread/WARN] [FML]: Mod ironchest is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.12.2-7.0.67.844
+[15:23:50] [Server thread/INFO] [FML]: Disabling mod jeiintegration it is client side only.
+[15:23:51] [Server thread/INFO] [FML]: Disabling mod torohealthmod it is client side only.
+[15:23:51] [Server thread/WARN] [FML]: Mod wings is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.1.6
+[15:23:51] [Server thread/INFO] [FML]: Forge Mod Loader has identified 70 mods to load
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for FML: assets/fml/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for buildcraftbuilders: assets/buildcraftbuilders/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for buildcraftcore: assets/buildcraftcore/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for buildcraftenergy: assets/buildcraftenergy/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for buildcraftfactory: assets/buildcraftfactory/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for buildcraftrobotics: assets/buildcraftrobotics/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for buildcraftsilicon: assets/buildcraftsilicon/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for buildcrafttransport: assets/buildcrafttransport/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for collective: assets/collective/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for unuverse: assets/unuverse/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for foamfix: assets/foamfix/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for ic2: assets/ic2/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for mtsofficialpack: assets/mtsofficialpack/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Missing English translation for eternalsoap.icbm.opencomputers: assets/eternalsoap.icbm.opencomputers/lang/en_us.lang
+[15:23:51] [Server thread/WARN] [FML]: Mod mowzies_wings has been disabled through configuration
+[15:23:51] [Server thread/WARN] [FML]: Mod bauble_wings has been disabled through configuration
+[15:23:51] [Server thread/WARN] [FML]: Mod mobends_wings has been disabled through configuration
+[15:23:51] [Server thread/INFO] [FML]: FML has found a non-mod file EnchantmentDescriptions-1.12.2-1.1.15.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[15:23:51] [Server thread/INFO] [FML]: FML has found a non-mod file GoldenAerotransport 3.3.1 hot fix.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[15:23:51] [Server thread/INFO] [FML]: FML has found a non-mod file jeiintegration_1.12.2-1.6.0.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[15:23:51] [Server thread/INFO] [FML]: FML has found a non-mod file torohealth-1.12.2-11.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[15:23:51] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, micdoodlecore, foamfixcore, opencomputers|core, techguns_core, securitycraft, biomesoplenty, bookshelf, buildcraftcompat, buildcraftbuilders, buildcraftcore, buildcraftenergy, buildcraftfactory, buildcraftlib, buildcraftrobotics, buildcraftsilicon, buildcrafttransport, collective, cyclopscore, evilcraft, evilcraftcompat, unuverse, fluxnetworks, foamfix, galacticraftplanets, galacticraftcore, waila, icbmclassic, ichunutil, mts, ic2, ironchest, ironfurnaces, jei, journeymap, mahoutsukai, mcwbridges, mcwdoors, mcwfences, mcwfurnitures, mcwlights, mcwroofs, mcwtrpdoors, mcwwindows, morph, mtsofficialpack, narcocraft, nuclearcraft, opencomputers, eternalsoap.icbm.opencomputers, railcraft, storagenetwork, slurpiesdongles, techguns, uteamcore, unucivil, unumilitary, unuparts, usefulbackpacks, wings, wonderful_enchantments, leatherfromrottenflesh, llibrary, immersiveengineering] at CLIENT
+[15:23:51] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, micdoodlecore, foamfixcore, opencomputers|core, techguns_core, securitycraft, biomesoplenty, bookshelf, buildcraftcompat, buildcraftbuilders, buildcraftcore, buildcraftenergy, buildcraftfactory, buildcraftlib, buildcraftrobotics, buildcraftsilicon, buildcrafttransport, collective, cyclopscore, evilcraft, evilcraftcompat, unuverse, fluxnetworks, foamfix, galacticraftplanets, galacticraftcore, waila, icbmclassic, ichunutil, mts, ic2, ironchest, ironfurnaces, jei, journeymap, mahoutsukai, mcwbridges, mcwdoors, mcwfences, mcwfurnitures, mcwlights, mcwroofs, mcwtrpdoors, mcwwindows, morph, mtsofficialpack, narcocraft, nuclearcraft, opencomputers, eternalsoap.icbm.opencomputers, railcraft, storagenetwork, slurpiesdongles, techguns, uteamcore, unucivil, unumilitary, unuparts, usefulbackpacks, wings, wonderful_enchantments, leatherfromrottenflesh, llibrary, immersiveengineering] at SERVER
+[15:23:51] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.network.PacketBuffer.func_180714_a
+[15:23:52] [Server thread/INFO] [STDOUT]: [pl.asie.patchy.helpers.ConstructorReplacingTransformer$FFMethodVisitor:visitTypeInsn:73]: Replaced NEW for net/minecraft/util/ClassInheritanceMultiMap to pl/asie/foamfix/coremod/common/FoamyClassInheritanceMultiMap
+[15:23:52] [Server thread/INFO] [STDOUT]: [pl.asie.patchy.helpers.ConstructorReplacingTransformer$FFMethodVisitor:visitMethodInsn:85]: Replaced INVOKESPECIAL for net/minecraft/util/ClassInheritanceMultiMap to pl/asie/foamfix/coremod/common/FoamyClassInheritanceMultiMap
+[15:23:53] [Server thread/INFO] [STDOUT]: [mtsofficialpack.MTSPackLoader:<init>:55]: Marco
+[15:23:53] [Server thread/ERROR] [FML]: The mod immersiveengineering is expecting signature 4cb49fcde3b43048c9889e0a3d083225da926334 for source ImmersiveEngineering-0.12-98.jar, however there is no signature matching that description
+[15:23:53] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraftforge.common.property.ExtendedBlockState.createState
+[15:23:53] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:165]: Added FIELD: net.minecraftforge.common.property.ExtendedBlockState.foamfix_mapper
+[15:23:53] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.patches.GhostBusterDefinitionPatch:apply:136]: Added ghost buster patch (radius = 4) in net/minecraftforge/fluids/BlockFluidClassic func_180650_b
+[15:23:53] [Server thread/INFO] [STDOUT]: [blusunrize.immersiveengineering.ImmersiveEngineering:wrongSignature:175]: [Immersive Engineering/Error] THIS IS NOT AN OFFICIAL BUILD OF IMMERSIVE ENGINEERING! Found these fingerprints: []
+[15:23:53] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
+[15:23:54] [Server thread/INFO] [FML]: Found 1542 ObjectHolder annotations
+[15:23:54] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[15:23:54] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[15:23:54] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[15:23:54] [Forge Version Check/INFO] [forge.VersionCheck]: [buildcraftcore] Starting version check at https://mod-buildcraft.com/version/versions.json
+[15:23:55] [Forge Version Check/INFO] [forge.VersionCheck]: [buildcraftcore] Found status: UP_TO_DATE Target: null
+[15:23:55] [Forge Version Check/INFO] [forge.VersionCheck]: [railcraft] Starting version check at http://www.railcraft.info/railcraft_versions
+[15:23:55] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.patches.GhostBusterDefinitionPatch:apply:136]: Added ghost buster patch (radius = 3) in biomesoplenty/common/block/BlockBOPGrass spreadGrass
+[15:23:55] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.patches.GhostBusterDefinitionPatch:apply:136]: Added ghost buster patch (radius = 1) in net/minecraftforge/fluids/BlockFluidFinite func_180650_b
+[15:23:55] [Forge Version Check/INFO] [forge.VersionCheck]: [techguns] Starting version check at https://raw.githubusercontent.com/pWn3d1337/Techguns2/master/update.json
+[15:23:55] [Forge Version Check/INFO] [forge.VersionCheck]: [techguns] Found status: AHEAD Target: null
+[15:23:55] [Forge Version Check/INFO] [forge.VersionCheck]: [slurpiesdongles] Starting version check at https://raw.githubusercontent.com/RedBullSlurpie/SlurpiesDongles/1.12.1/update.json
+[15:23:55] [Server thread/INFO] [BuildCraft]: 
+[15:23:55] [Server thread/INFO] [BuildCraft]: Starting BuildCraft 7.99.24.8
+[15:23:55] [Server thread/INFO] [BuildCraft]: Copyright (c) the BuildCraft team, 2011-2018
+[15:23:55] [Server thread/INFO] [BuildCraft]: https://www.mod-buildcraft.com
+[15:23:55] [Server thread/INFO] [BuildCraft]: Detailed Build Information:
+[15:23:55] [Server thread/INFO] [BuildCraft]:   Branch HEAD
+[15:23:55] [Server thread/INFO] [BuildCraft]:   Commit 68370005a10488d02a4bb4b8df86bbc62633d216
+[15:23:55] [Server thread/INFO] [BuildCraft]:     Bump version for release relase, fix a java 13+ compile error, tweak changelog, and fix engines chaining one block more than they should have.
+[15:23:55] [Server thread/INFO] [BuildCraft]:     committed by AlexIIL
+[15:23:55] [Server thread/INFO] [BuildCraft]: 
+[15:23:55] [Server thread/INFO] [BuildCraft]: Loaded Modules:
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - lib
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - core
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - builders
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - energy
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - factory
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - robotics
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - silicon
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - transport
+[15:23:55] [Server thread/INFO] [BuildCraft]:   - compat
+[15:23:55] [Server thread/INFO] [BuildCraft]: Missing Modules:
+[15:23:55] [Server thread/INFO] [BuildCraft]: 
+[15:23:56] [Forge Version Check/INFO] [forge.VersionCheck]: [uteamcore] Starting version check at https://api.u-team.info/update/uteamcore.json
+[15:23:56] [Server thread/INFO] [BuildCraft]: [debugger] Not a dev environment!
+[15:23:56] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[15:23:56] [Forge Version Check/INFO] [forge.VersionCheck]: [uteamcore] Found status: UP_TO_DATE Target: null
+[15:23:56] [Forge Version Check/INFO] [forge.VersionCheck]: [immersiveengineering] Starting version check at https://raw.githubusercontent.com/BluSunrize/ImmersiveEngineering/master/changelog.json
+[15:23:56] [Forge Version Check/INFO] [forge.VersionCheck]: [immersiveengineering] Found status: AHEAD Target: null
+[15:23:56] [Forge Version Check/INFO] [forge.VersionCheck]: [llibrary] Starting version check at https://gist.githubusercontent.com/Gegy/a6639456aeb8edd92cbf7cbfcf9d65d9/raw/llibrary_updates.json
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [llibrary] Found status: UP_TO_DATE Target: null
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [storagenetwork] Starting version check at https://raw.githubusercontent.com/Lothrazar/Storage-Network/master/update.json
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [storagenetwork] Found status: BETA Target: null
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [buildcraftcompat] Starting version check at https://mod-buildcraft.com/version/versions-compat.json
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [buildcraftcompat] Found status: AHEAD Target: null
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [usefulbackpacks] Starting version check at https://api.u-team.info/update/usefulbackpacks.json
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [usefulbackpacks] Found status: UP_TO_DATE Target: null
+[15:23:57] [Forge Version Check/INFO] [forge.VersionCheck]: [securitycraft] Starting version check at https://www.github.com/Geforce132/SecurityCraft/raw/master/Updates/Forge.json
+[15:23:58] [Forge Version Check/INFO] [forge.VersionCheck]: [securitycraft] Found status: UP_TO_DATE Target: null
+[15:23:58] [Forge Version Check/INFO] [forge.VersionCheck]: [buildcraftlib] Starting version check at https://mod-buildcraft.com/version/versions.json
+[15:23:58] [Forge Version Check/INFO] [forge.VersionCheck]: [buildcraftlib] Found status: UP_TO_DATE Target: null
+[15:23:58] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[15:23:59] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: AHEAD Target: null
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 354 out of 354 recipes for shaped recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 79 out of 79 recipes for shapeless recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 41 out of 41 recipes for solid uu recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 27 out of 27 recipes for furnace recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 5 out of 5 recipes for blast furnace recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 14 out of 14 recipes for block cutter recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 51 out of 51 recipes for compressor recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 14 out of 14 recipes for extractor recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 89 out of 89 recipes for macerator recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 5 out of 5 recipes for metal former cutting recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 10 out of 10 recipes for metal former extruding recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 14 out of 14 recipes for metal former rolling recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 8 out of 8 recipes for ore washing recipes
+[15:24:00] [Server thread/INFO] [ic2.Recipe]: Successfully loaded 26 out of 26 recipes for thermal centrifuge recipes
+[15:24:00] [Server thread/INFO] [BuildCraft]: 
+[15:24:00] [Server thread/INFO] [BuildCraft]: Starting BuildCraftCompat 7.99.24.8
+[15:24:00] [Server thread/INFO] [BuildCraft]: Copyright (c) the BuildCraft team, 2011-2017
+[15:24:00] [Server thread/INFO] [BuildCraft]: https://www.mod-buildcraft.com
+[15:24:00] [Server thread/INFO] [BuildCraft]: Detailed Build Information:
+[15:24:00] [Server thread/INFO] [BuildCraft]:   Branch 8.0.x-1.12.2
+[15:24:00] [Server thread/INFO] [BuildCraft]:   Commit 16adfdb3d6a3362ba3659be7d5e9b7d12af7eee5
+[15:24:00] [Server thread/INFO] [BuildCraft]:     Bump for release.
+[15:24:00] [Server thread/INFO] [BuildCraft]:     committed by AlexIIL
+[15:24:00] [Server thread/INFO] [BuildCraft]: 
+[15:24:00] [Server thread/INFO] [BuildCraft]: [compat] Module list:
+[15:24:00] [Server thread/INFO] [BuildCraft]: [compat]   x forestry (It cannot load)
+[15:24:00] [Server thread/INFO] [BuildCraft]: [compat]   x theoneprobe (It cannot load)
+[15:24:00] [Server thread/INFO] [BuildCraft]: [compat]   x crafttweaker (It cannot load)
+[15:24:00] [Server thread/INFO] [BuildCraft]: [compat]   + ic2
+[15:24:01] [Server thread/INFO] [mcinterface1122.InterfaceLoader]: Welcome to MTS VERSION:22.17.0
+[15:24:01] [Server thread/ERROR] [mcinterface1122.InterfaceLoader]: MTSERROR: Could not do model-based legacy compats on mtsofficialpack:engineamci4.  Lights and treads will likely not be present on this model.
+[15:24:01] [Server thread/ERROR] [mcinterface1122.InterfaceLoader]: MTSERROR: For input string: "roller2"
+[15:24:02] [Server thread/ERROR] [mcinterface1122.InterfaceLoader]: MTSERROR: Object Cube.006 found with no faces defined at line: 6684 in: /assets/ivairlinerpack/objmodels/vehicles/ground/airstairs.obj
+[15:24:05] [Server thread/ERROR] [mcinterface1122.InterfaceLoader]: MTSERROR: ConfigSystem failed to save modified config files.  Report to the mod author!
+[15:24:05] [Server thread/INFO] [foamfix]: Removing LaunchWrapper package manifest map...
+[15:24:05] [Server thread/INFO] [Galacticraft]: Galacticraft oil is not default, issues may occur.
+[15:24:06] [Server thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class net.minecraft.entity.EntityAgeable from class icbm.classic.lib.capability.chicken.CapSpaceChicken
+[15:24:06] [Server thread/INFO] [icbmclassic]: ExplosiveRegistry: loading registry save, File: /home/lyrix/GitHub/magicmc/server/config/icbmclassic/explosive_reg.json
+[15:24:06] [Server thread/WARN] [iChunUtil]: Config property enableFlight from mod Morph may not be localized!
+[15:24:06] [Server thread/INFO] [nuclearcraft]: Pre Initializing...
+[15:24:06] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.tile.generator.TileFissionController.
+[15:24:06] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.tile.dummy.TileFissionPort.
+[15:24:06] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.tile.radiation.TileRadiationScrubber.
+[15:24:06] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.tile.radiation.TileGeigerCounter.
+[15:24:06] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.tile.generator.TileFusionCore.
+[15:24:06] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.multiblock.saltFission.tile.TileSaltFissionComputerPort.
+[15:24:06] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.multiblock.heatExchanger.tile.TileHeatExchangerComputerPort.
+[15:24:07] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class nc.multiblock.turbine.tile.TileTurbineComputerPort.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `adapter`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/INFO] [OpenComputers]: Injecting interface ic2.api.energy.tile.IEnergySink into li.cil.oc.common.tileentity.traits.power.IndustrialCraft2Experimental.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `assembler`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `cable`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `capacitor`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `carpetedcapacitor`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `case`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `charger`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `diskdrive`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `disassembler`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `keyboard`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `hologram`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `geolyzer`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `microcontroller`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `motionsensor`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `netsplitter`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `powerconverter`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `powerdistributor`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `print`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `printer`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `raid`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `redstone`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `relay`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `robot`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `screen`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `rack`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `transposer`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `oc` for name `waypoint`, expected `opencomputers`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:07] [Server thread/INFO] [OpenComputers]: Injecting interface ic2.api.item.IBoxable into li.cil.oc.common.item.Wrench.
+[15:24:07] [Server thread/INFO] [OpenComputers]: Injecting interface ic2.api.item.ISpecialElectricItem into li.cil.oc.common.item.traits.Chargeable.
+[15:24:08] [Server thread/INFO] [opencomputers]: Initializing OpenComputers API.
+[15:24:08] [Server thread/INFO] [opencomputers]: Found a compatible native library: 'OpenComputersMod-1.8.7-52-libjnlua52-linux-x86_64.so'.
+[15:24:08] [Server thread/INFO] [opencomputers]: Found a compatible native library: 'OpenComputersMod-1.8.7-53-libjnlua53-linux-x86_64.so'.
+[15:24:08] [Server thread/INFO] [opencomputers]: Found a compatible native library: 'OpenComputersMod-1.8.7-54-libjnlua54-linux-x86_64.so'.
+[15:24:08] [Server thread/INFO] [opencomputers]: Done with pre init phase.
+[15:24:10] [Server thread/INFO] [railcraft]: Module failed prerequisite check, disabling: railcraft:thaumcraft
+[15:24:10] [Server thread/INFO] [railcraft]: mods.railcraft.api.core.IRailcraftModule$MissingPrerequisiteException: Thaumcraft not detected
+[15:24:10] [Server thread/INFO] [railcraft]: Module failed prerequisite check, disabling: railcraft:forestry
+[15:24:10] [Server thread/INFO] [railcraft]: mods.railcraft.api.core.IRailcraftModule$MissingPrerequisiteException: Forestry not detected
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:core +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:automation +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:carts +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:charge +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:emblem +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:factory +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:ic2 +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:magic +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:redstone_flux +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:resources +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:seasonal +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:signals +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:steam +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:tracks +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:extras +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:locomotives +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:routing +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:tracks|abandoned +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:tracks|electric +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:tracks|high_speed +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:tracks|high_speed_electric +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:tracks|reinforced +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:tracks|strap_iron +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:trains +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:transport +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:world +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:building +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:worldspikes +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:forestry -
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage CONSTRUCTION: railcraft:thaumcraft -
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:core +
+[15:24:10] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraft.client.renderer.block.model.ModelResourceLocation.<init>
+[15:24:10] [Server thread/WARN] [FML]: A mod has attempted to assign Block Block{minecraft:air} to the Fluid 'steam' but this Fluid has already been linked to the Block Block{nuclearcraft:fluid_steam}. You may have duplicate Fluid Blocks as a result. It *may* be possible to configure your mods to avoid this.
+[15:24:10] [Server thread/WARN] [FML]: A mod has attempted to assign Block Block{railcraft:steam} to the Fluid 'steam' but this Fluid has already been linked to the Block Block{nuclearcraft:fluid_steam}. You may have duplicate Fluid Blocks as a result. It *may* be possible to configure your mods to avoid this.
+[15:24:10] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `commandblock_minecart`, expected `railcraft`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:10] [Server thread/WARN] [railcraft]: Successfully substituted minecraft:commandblock_minecart with railcraft:cart_command_block. This is an intended override.
+[15:24:10] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `minecart`, expected `railcraft`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:10] [Server thread/WARN] [railcraft]: Successfully substituted minecraft:minecart with railcraft:cart_basic. This is an intended override.
+[15:24:10] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `chest_minecart`, expected `railcraft`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:10] [Server thread/WARN] [railcraft]: Successfully substituted minecraft:chest_minecart with railcraft:cart_chest. This is an intended override.
+[15:24:10] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `furnace_minecart`, expected `railcraft`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:10] [Server thread/WARN] [railcraft]: Successfully substituted minecraft:furnace_minecart with railcraft:cart_furnace. This is an intended override.
+[15:24:10] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `tnt_minecart`, expected `railcraft`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:10] [Server thread/WARN] [railcraft]: Successfully substituted minecraft:tnt_minecart with railcraft:cart_tnt. This is an intended override.
+[15:24:10] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `hopper_minecart`, expected `railcraft`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:10] [Server thread/WARN] [railcraft]: Successfully substituted minecraft:hopper_minecart with railcraft:cart_hopper. This is an intended override.
+[15:24:10] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `spawner_minecart`, expected `railcraft`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:10] [Server thread/WARN] [railcraft]: Successfully substituted minecraft:spawner_minecart with railcraft:cart_spawner. This is an intended override.
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:automation +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:carts +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:charge +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:emblem +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:factory +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:ic2 +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:magic +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:redstone_flux +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:resources +
+[15:24:10] [Server thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class mods.railcraft.common.carts.EntityTunnelBore from class mods.railcraft.common.plugins.forge.DataManagerPlugin
+[15:24:10] [Server thread/WARN] [railcraft]: This is NOT an error. Its just Forge being nosy.
+[15:24:10] [Server thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class mods.railcraft.common.carts.EntityTunnelBore from class mods.railcraft.common.plugins.forge.DataManagerPlugin
+[15:24:10] [Server thread/WARN] [railcraft]: This is NOT an error. Its just Forge being nosy.
+[15:24:10] [Server thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class mods.railcraft.common.carts.EntityTunnelBore from class mods.railcraft.common.plugins.forge.DataManagerPlugin
+[15:24:10] [Server thread/WARN] [railcraft]: This is NOT an error. Its just Forge being nosy.
+[15:24:10] [Server thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class mods.railcraft.common.carts.EntityTunnelBore from class mods.railcraft.common.plugins.forge.DataManagerPlugin
+[15:24:10] [Server thread/WARN] [railcraft]: This is NOT an error. Its just Forge being nosy.
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:seasonal +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:signals +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:steam +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:tracks +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:extras +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:locomotives +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:routing +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:tracks|abandoned +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:tracks|electric +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:tracks|high_speed +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:tracks|high_speed_electric +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:tracks|reinforced +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:tracks|strap_iron +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:trains +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:transport +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:world +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:building +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:worldspikes +
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:forestry -
+[15:24:10] [Server thread/INFO] [railcraft]: Module performing stage PRE_INIT: railcraft:thaumcraft -
+[15:24:11] [Server thread/INFO] [OpenComputers]: Successfully injected component logic into class techguns.tileentities.ReactionChamberTileEntMaster.
+[15:24:11] [Server thread/WARN] [FML]: A mod has attempted to assign Block Block{minecraft:air} to the Fluid 'creosote' but this Fluid has already been linked to the Block Block{railcraft:creosote}. You may have duplicate Fluid Blocks as a result. It *may* be possible to configure your mods to avoid this.
+[15:24:11] [Server thread/WARN] [FML]: A mod has attempted to assign Block Block{minecraft:air} to the Fluid 'ethanol' but this Fluid has already been linked to the Block Block{nuclearcraft:fluid_ethanol}. You may have duplicate Fluid Blocks as a result. It *may* be possible to configure your mods to avoid this.
+[15:24:11] [Immersive Engineering Contributors Thread/INFO] [immersiveengineering]: Attempting to download special revolvers from GitHub
+[15:24:11] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `fluxcontroller`, expected `fluxnetworks`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:11] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `fluxpoint`, expected `fluxnetworks`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:11] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `fluxplug`, expected `fluxnetworks`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:11] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `fluxstorage`, expected `fluxnetworks`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:11] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `herculeanfluxstorage`, expected `fluxnetworks`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:11] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `gargantuanfluxstorage`, expected `fluxnetworks`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/INFO] [STDOUT]: [pl.asie.foamfix.coremod.FoamFixTransformer:spliceClasses:114]: Spliced in METHOD: net.minecraftforge.fml.common.network.ByteBufUtils.writeUTF8String
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.iron`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.gold`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.diamond`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.copper`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.silver`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.crystal`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.obsidian`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironchest.dirtchest9000`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironshulkerbox.iron`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironshulkerbox.gold`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironshulkerbox.diamond`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironshulkerbox.copper`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironshulkerbox.silver`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironshulkerbox.crystal`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `ironshulkerbox.obsidian`, expected `ironchest`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/INFO] [FML]: Applying holder lookups
+[15:24:12] [Server thread/INFO] [FML]: Holder lookups applied
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name ingotSteel has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:163)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name ingotCopper has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:163)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name clumpSteel has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:164)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name plateSteel has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:168)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name plateIron has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:168)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name circuitBasic has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:172)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name circuitAdvanced has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:172)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name circuitElite has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:172)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name wireCopper has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:176)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * A broken ore dictionary registration with name wireGold has occurred. It adds an item (type: class icbm.classic.content.items.ItemCrafting) which is currently unknown to the game registry. This dictionary item can only support a single value when registered with ores like this, and NO I am not going to turn this spam off. Just register your ore dictionary entries after the GameRegistry.
+TO USERS: YES this is a BUG in the mod ICBM Classic report it to them!
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:679)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreName(ItemCrafting.java:63)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.registerOreNames(ItemCrafting.java:41)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.items.ItemCrafting.<init>(ItemCrafting.java:32)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:176)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name dustSulfur has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:665)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:186)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_73_ItemReg_registerItems_Register.invoke(.dynamic)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/WARN] [FML]: * Invalid registration attempt for an Ore Dictionary item with name dustSaltpeter has occurred. The registration has been denied to prevent crashes. The mod responsible for the registration needs to correct this.
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOreImpl(OreDictionary.java:665)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.oredict.OreDictionary.registerOre(OreDictionary.java:651)
+[15:24:12] [Server thread/WARN] [FML]: *  at icbm.classic.content.reg.ItemReg.registerItems(ItemReg.java:187)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_73_ItemReg_registerItems_Register.invoke(.dynamic)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+[15:24:12] [Server thread/WARN] [FML]: *  at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)...
+[15:24:12] [Server thread/WARN] [FML]: ****************************************
+[15:24:12] [Server thread/INFO] [STDOUT]: [mtsofficialpack.MTSPackLoader:registerItems:119]: Polo!
+[15:24:12] [Server thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `shield`, expected `wonderful_enchantments`. This could be a intended override, but in most cases indicates a broken mod.
+[15:24:12] [Server thread/INFO] [FML]: Applying holder lookups
+[15:24:12] [Server thread/INFO] [FML]: Holder lookups applied
+[15:24:12] [Server thread/INFO] [EvilCraft]: 1428 possible Broom base combinations are ready for flying!
+[15:24:12] [Server thread/INFO] [EvilCraft]: 18 Broom modifiers can be applied!
+[15:24:12] [Server thread/INFO] [FML]: Applying holder lookups
+[15:24:12] [Server thread/INFO] [FML]: Holder lookups applied
+[15:24:12] [Server thread/INFO] [FML]: Applying holder lookups
+[15:24:12] [Server thread/INFO] [FML]: Holder lookups applied
+[15:24:12] [Server thread/INFO] [FML]: Injecting itemstacks
+[15:24:12] [Server thread/INFO] [FML]: Itemstack injection complete
+[15:24:12] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Loading properties
+[15:24:12] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Default game type: SURVIVAL
+[15:24:12] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Generating keypair
+[15:24:12] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting Minecraft server on 81.222.189.236:25565
+[15:24:12] [Server thread/INFO] [net.minecraft.network.NetworkSystem]: Using epoll channel type
+[15:24:12] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: **** FAILED TO BIND TO PORT!
+[15:24:12] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: The exception was: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Cannot assign requested address
+[15:24:12] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer]: Perhaps a server is already running on that port?
+[15:24:12] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[15:24:12] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[15:24:12] [Server thread/INFO] [nuclearcraft]: Server Closing...
+[15:24:12] [Server thread/INFO] [FML]: The state engine was in incorrect state POSTINITIALIZATION and forced into state SERVER_STOPPED. Errors may have been discarded.
+[15:24:12] [Server Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[15:24:12] [Server Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
