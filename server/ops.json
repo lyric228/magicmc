@@ -1,5 +1,20 @@
 [
-    zxclyric,
-    IndustrProm,
-    Adolfus_1933
+  {
+    "uuid": "14b69e54-9a7a-3a58-a0de-cb320d7affcd",
+    "name": "IndustrProm",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "c24b58c3-127e-384f-8dcc-13f36145cd29",
+    "name": "zxclyric",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "e4eaaf44-45c9-39f9-a056-03c60e520f65",
+    "name": "Adolfus_1933",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
 ]
