@@ -1,0 +1,63 @@
+{
+  "mcwlights:recipes/garden_light": {
+    "criteria": {
+      "has_planks": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "nuclearcraft:root": {
+    "criteria": {
+      "location": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "mcwlights:recipes/glowstone_slab": {
+    "criteria": {
+      "has_wood": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "mcwlights:recipes/lava_lamp": {
+    "criteria": {
+      "has_planks": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "mcwlights:recipes/redstone_slab": {
+    "criteria": {
+      "has_wood": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "galacticraftcore:galacticraft/root": {
+    "criteria": {
+      "tick": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "mts:rtfm": {
+    "criteria": {
+      "has_manual": "2025-02-01 22:42:37 +0300"
+    },
+    "done": true
+  },
+  "mcwlights:recipes/sea_lantern_slab": {
+    "criteria": {
+      "has_wood": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "mcwlights:recipes/torches": {
+    "criteria": {
+      "has_wood": "2025-02-01 22:42:34 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "taiga": "2025-02-01 22:42:34 +0300",
+      "taiga_hills": "2025-02-01 22:42:55 +0300"
+    },
+    "done": false
+  }
+}
