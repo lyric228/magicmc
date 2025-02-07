@@ -5,8 +5,7 @@ echo "SERVER IP ADDRESS"
 echo "$(curl -s ifconfig.me):25565"
 echo ""
 
-RAM_GB=$(free -g | awk '/^Mem:/{print $2}')
-RAM_MB=$((RAM_GB * 1024))
+RAM_MB=$(free -m | awk '/^Mem:/{print $2}')
 RAM_VAR=$((RAM_MB - 2048))
 
 echo ""
