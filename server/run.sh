@@ -6,7 +6,7 @@ echo "$(curl -s ifconfig.me):25565"
 echo ""
 
 RAM_MB=$(free -m | awk '/^Mem:/{print $2}')
-RAM_VAR=$((RAM_MB - 2048))
+RAM_VAR=$((RAM_MB - 1024))
 
 echo ""
 echo "USING ${RAM_VAR} MB RAM"
