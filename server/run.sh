@@ -3,7 +3,7 @@
 echo "SERVER IP ADDRESS: $(curl -s ifconfig.me):25565"
 
 TOTAL_MEM=$(free -m | awk '/^Mem:/{m=$2} /^Swap:/{s=$2} END{print m+s}')
-RAM_VAR=$((TOTAL_MEM - 8192))
+RAM_VAR=$((TOTAL_MEM - 4096))
 
 echo -e "\nALLOCATED: ${RAM_VAR}M (Total: ${TOTAL_MEM}M)"
 
